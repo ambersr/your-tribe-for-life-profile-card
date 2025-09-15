@@ -20,3 +20,30 @@
 </header>
 
 {@render children?.()}
+
+<style>
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1em 0em;
+		position: sticky;
+		top: 0;
+		background-color: var(--secondary-background);
+
+	}
+
+	a h2{
+		color: var(--third-text);
+	}
+
+	nav {
+		display: flex;
+		gap: 1em;
+		
+	}
+
+	nav a:hover {
+		text-decoration: underline;
+	}
+</style>
