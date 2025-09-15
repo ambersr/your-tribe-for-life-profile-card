@@ -31,6 +31,9 @@
 		top: 0;
 		background-color: var(--secondary-background);
 
+		@media screen and (min-width: 900px) {
+            padding: 1em 2em;
+        }
 	}
 
 	a h2{
@@ -41,6 +44,9 @@
 		display: flex;
 		gap: 1em;
 		
+		@media screen and (min-width: 900px) {
+         gap: 3em;
+     }
 	}
 
 	nav a:hover {
