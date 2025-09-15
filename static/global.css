@@ -5,3 +5,68 @@
     font-weight: 900;
     font-display: swap;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Colors */
+    --primary-background: #fff;
+    --secondary-background: #000;
+    --primary-text: #000;
+    --secondary-text: #8E8A8A;
+    --third-text: #fff;
+    
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    overflow: hidden;
+    cursor: pointer;
+    
+     @media screen and (min-width: 900px) {
+         height: 100vh;
+     }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Arges', system-ui, sans-serif;
+    text-transform: uppercase;
+    color: var(--primary-text);
+}
+
+h1 {
+    font-size: clamp(2.8125rem, 2.2665rem + 2.2989vw, 4.0625rem);
+}
+
+h2 {
+    font-size: clamp(1.875rem, 1.602rem + 1.1494vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5625rem, 1.426rem + 0.5747vw, 1.875rem);
+}
+
+h4 {
+    font-size: clamp(1.5625rem, 1.426rem + 0.5747vw, 1.875rem);
+}
+
+h5 {
+    font-size: clamp(1.25rem, 1.1135rem + 0.5747vw, 1.5625rem);
+}
+
+h6 {
+    font-size: clamp(1.125rem, 1.0704rem + 0.2299vw, 1.25rem);
+}
+
+p,a {
+    font-family: 'Geist Mono';
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary-text);
+}
