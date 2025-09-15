@@ -1,5 +1,4 @@
 <script>
-    let { data } = $props(); // rune die data doorgeeft tussen page.server.js en page.svelte ("magische property")
     import DarkButton from '$lib/components/DarkButton.svelte';
 
     let { data } = $props();
