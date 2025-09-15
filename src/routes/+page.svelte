@@ -33,3 +33,73 @@
     </div>
     
 </main>
+
+<style>
+    main {
+        background-color: var(--primary-background);
+        padding: 2em;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+        margin: 1em 0 2em 0;
+
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        position: relative;
+        align-items: center;
+    }
+
+    .left img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: 0% 10%;
+
+    }
+
+    .left section {
+        background-color: var(--secondary-background);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 1em;
+        padding: .5em .5em .5em 1em;
+        gap: 1em;
+    }
+
+    .left h3 {
+        color: var(--third-text);
+        margin: 0 0 -.2em 0;
+    }
+    
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .share {
+        display: flex;
+        gap: .5em;
+    }
+
+    .right a {
+        background-color: var(--secondary-background);
+        padding: .5em;
+        display: flex;
+        align-items: center;
+    }
+</style>
