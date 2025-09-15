@@ -44,6 +44,15 @@
         gap: 2em;
         margin: 1em 0 2em 0;
 
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+             width: 50em;
+             margin: auto;
+             gap: 4em;
+
+             p {
+                width: 80%;
+             }
         }
     }
 
@@ -61,6 +70,9 @@
         object-fit: cover;
         object-position: 0% 10%;
 
+         @media screen and (min-width: 900px) {
+            width: auto;
+        }
     }
 
     .left section {
@@ -83,6 +95,9 @@
         flex-direction: column;
         gap: 1.5em;
 
+         @media screen and (min-width: 900px) {
+            justify-content: space-between;
+        }
     }
 
     .socials {
