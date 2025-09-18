@@ -1,14 +1,19 @@
 <script>
     import DarkButton from '$lib/components/DarkButton.svelte';
+    import github from '$lib/assets/github.svg';
+    import instagram from '$lib/assets/instagram.svg';
+    import mail from '$lib/assets/mail.svg';
+    import linkedin from '$lib/assets/linkedin.svg';
+    import portret from '$lib/assets/portret-amber.jpg';
+
 
     let { data } = $props();
     const person = data.person;
 
 </script>
 
-<main>
     <div class="left">
-        <img src="/images/portret-amber.jpg" alt="" width="200" height="300">
+        <img src="{portret}" alt="" width="200" height="300">
         <section>
             <h3>Contact opnemen</h3>
             <DarkButton href="mailto:amber.schalker@hva.nl">Contact</DarkButton>
@@ -24,9 +29,9 @@
         <section class="socials">
             <h2>My socials</h2>
             <div class="share">
-                <a href="{person.custom.socials.instagram}"><img src="/images/instagram.svg" alt="Logo Instagram"></a>
-                <a href="{person.custom.socials.github}"><img src="/images/github.svg" alt="Logo Github"></a>
-                <a href="{person.custom.socials.linkedin}"><img src="/images/linkedin.svg" alt="Logo LinkedIn"></a>
+                <a href="{person.custom.socials.instagram}"><img src="{instagram}" alt="Logo Instagram"></a>
+                <a href="{person.custom.socials.github}"><img src="{github}" alt="Logo Github"></a>
+                <a href="{person.custom.socials.linkedin}"><img src="{linkedin}" alt=""></a>
             </div>
             
         </section>
