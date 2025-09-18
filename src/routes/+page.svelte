@@ -33,7 +33,40 @@
 </script>
 
     <div class="left">
-        <img src="{portret}" alt="" width="200" height="300">
+        <picture>
+                <source 
+                    srcset="
+                        {portret}?format=avif&width=50 50w,
+                        {portret}?format=avif&width=100 100w,
+                        {portret}?format=avif&width=200 200w
+                    "
+                    sizes="
+                        (max-width: 600px) 50px,
+                        (max-width: 1200px) 100px,
+                        200px
+                    "
+                    type="image/avif"
+                />
+                <source 
+                    srcset="
+                        {portret}?format=webp&width=50 50w,
+                        {portret}?format=webp&width=100 100w,
+                        {portret}?format=webp&width=200 200w
+                    "
+                    sizes="
+                        (max-width: 600px) 50px,
+                        (max-width: 1200px) 100px,
+                        200px
+                    "
+                    type="image/webp"/>
+                    <img
+                        src="{portret}?format=png&width=100"
+                        alt="Avatar van {person.name}"
+                        width="50"
+                        height="50"
+                        class="avatar-img"
+                        loading="lazy"/>           
+            </picture>
         <section>
             <h3>Contact opnemen</h3>
             <DarkButton href="mailto:amber.schalker@hva.nl">Contact</DarkButton>
@@ -66,6 +99,10 @@
         align-items: center;
     }
 
+    .left picture {
+        width: 100%;
+    }
+
     .left img {
         width: 100%;
         height: auto;
@@ -73,7 +110,7 @@
         object-position: 0% 10%;
 
          @media screen and (min-width: 900px) {
-            width: auto;
+            width: 20em;
         }
     }
 
