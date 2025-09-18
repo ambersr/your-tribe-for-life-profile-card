@@ -27,6 +27,7 @@
 </main>
 
 <style>
+	/* Algemene styling main */
 	main {
         background-color: var(--primary-background);
         padding: 2em;
@@ -50,6 +51,7 @@
 		}
     }
 
+	/* Header */
 	header {
 		display: flex;
 		align-items: center;

@@ -12,6 +12,7 @@
     padding: 0;
 }
 
+/* Focus state */
 *:focus {
     outline: 3px dashed var(--primary-highlight);
     outline-offset: 4px;
@@ -37,6 +38,7 @@ body {
      }
 }
 
+/* Algemene tekst styling */
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Arges', system-ui, sans-serif;
     text-transform: uppercase;
