@@ -65,7 +65,7 @@
                         width="50"
                         height="50"
                         class="avatar-img"
-                        loading="lazy"/>           
+                        fetchpriority="high"/>           
             </picture>
         <section>
             <h3>Contact opnemen</h3>
