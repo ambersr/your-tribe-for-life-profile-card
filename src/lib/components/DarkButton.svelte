@@ -1,5 +1,5 @@
 <script>
-    let href = "";
+    export let href = "";
 </script>
 
 <!-- Knop -->
