@@ -13,7 +13,7 @@
 }
 
 *:focus {
-    outline: 3px dashed #4A3AFF;
+    outline: 3px dashed var(--primary-highlight);
     outline-offset: 4px;
 }
 
@@ -21,6 +21,7 @@ body {
     /* Colors */
     --primary-background: #fff;
     --secondary-background: #000;
+    --primary-highlight: #4A3AFF;
     --primary-text: #000;
     --secondary-text: #8E8A8A;
     --third-text: #fff;
@@ -74,4 +75,22 @@ p,a {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--secondary-text);
+}
+
+/* Skiplink */
+.skip-link {
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--primary-background);
+    border: 1px solid var(--primary-background);
+    padding: .5em 1em;
+    transition: .3s ease-in;
+    position: absolute;
+    top: 4rem;
+    left: -15rem;
+}
+
+.skip-link:focus-visible {
+    left: 3rem;
+    z-index: 9999;
 }
