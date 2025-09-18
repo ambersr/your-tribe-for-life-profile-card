@@ -10,6 +10,8 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<a href="#main" class="skip-link">Ga naar content</a>
+
 <header>
 	<a href="/"><h2>AS</h2></a>
 	<nav>
@@ -20,7 +22,6 @@
 	<DarkButton href="mailto:amber.schalker@hva.nl">Contact</DarkButton>
 </header>
 
-{@render children?.()}
 <main id="main">
 	{@render children?.()}
 </main>
