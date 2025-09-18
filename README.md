@@ -1,38 +1,83 @@
-# sv
+# Visitekaartje Sprint 13
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+In sprint 13 heb ik gewerkt aan mijn visitekaartje. Daarbij lag de nadruk om het visitekaartje dynamisch te maken met het framework SvelteKit. Het doel is om kennis te maken met gebruik van SvelteKit en zoveel mogelijk informatie op mijn visitekaartje dynamisch te maken.
 
-## Creating a project
+![mockup-profile-card](https://github.com/user-attachments/assets/c2ee9171-dad1-4c80-8792-46600aed25a8)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Inhoudsopgave
+  * [Beschrijving](#beschrijving)
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
-```sh
-# create a new project in the current directory
+## Beschrijving
+
+### Mobile first
+- Mobile first gebouwd
+- `@media queries` toegevoegd om de card responsive te maken
+
+### Herbruikbare component
+- De knoppen op de pagina zijn herbruikbare componenten. Deze wordt in de `$lib` als component `DarkButton.svelte` aangemaakt. In het component wordt de tekst ingeladen via `<slot />`
+
+### Hover animation card
+- Als je over de card hovered scaled de visite card met je muis mee. Hierdoor krijgt de 'minimalistische' visitekaartje meer speelsheid
+
+## Kenmerken
+In dit project gebruik ik SvelteKit om een dynamische visitekaartje te bouwen met herbruikbare componenten en routes. Data wordt opgehaald via de Directus API. 
+
+### Routes
+- [`/`](https://github.com/ambersr/your-tribe-for-life-profile-card/blob/main/src/routes/%2Bpage.svelte): Op de home pagina wordt het visitekaartje getoond.
+
+### Componenten 
+- [`DarkButton`](https://github.com/ambersr/your-tribe-for-life-profile-card/blob/main/src/lib/components/DarkButton.svelte): In dit component staat de knop die gebruikt wordt in het visite kaartje en de header.
+
+### Data
+Data wordt opgehaald in `+page.server.js`. Hierin wordt een fetch gedaan naar de Directus API, wordt de data verwerkt en gerenderd naar de `+page.svelte` pagina. 
+- Zie de [`+page.server.js` van de home pagina](https://github.com/ambersr/your-tribe-for-life-profile-card/blob/main/src/routes/%2Bpage.server.js). 
+
+## Installatie
+Om dit project te bouwen moeten onderstaande stappen uitgevoerd worden. `Node.js` en `npm` (of alternatieven, zoals `pnpm` of `yarn`) zijn een vereiste package manager om te kunnen beginnen.  
+
+### Project aanmaken 
+- Als je een nieuwe SvelteKit project wil starten, voer volgende commando's uit in de terminal:
+
+```
 npx sv create
-
-# create a new project in my-app
-npx sv create my-app
 ```
 
-## Developing
+- Volg vervolgens de stappen die in de terminal verschijnen.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Installeren 
+- Nadat het project is uitgevoerd, voer onderstaand command uit om alle dependencies te installeren
 
-```sh
-npm run dev
+```
+npm install
+```
 
-# or start the server and open the app in a new browser tab
+### Ontwikkelen
+-  Als alle dependencies zijn geïnstalleerd, kan de ontwikkelserver gestart worden. Doe dit met onderstaand commando, en krijg automatisch veranderingen te zien:
+
+```
 npm run dev -- --open
 ```
 
-## Building
+### Builden 
+- Op een productversie van je app te maken:
 
-To create a production version of your app:
-
-```sh
+```
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+- En op de productieversie te bekijken:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```
+npm run preview
+```
+
+## Bronnen
+- [Ontwerp in Figma](https://www.figma.com/design/CtPASxzpUzUxQg4aRkL1Zh/Webdesign-visitekaartje?node-id=83-49&t=M2TCJakN7QoOVNmP-1)
+- Inspiratie opgedaan van [Awwards](https://www.awwwards.com/)
+
+## Licentie
+This project is licensed under the terms of the [MIT license](./LICENSE).
