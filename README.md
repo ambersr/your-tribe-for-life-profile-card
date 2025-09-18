@@ -22,11 +22,18 @@ Live link naar mijn visitekaartje: https://edu.nl/cud63
 - Mobile first gebouwd
 - `@media queries` toegevoegd om de card responsive te maken
 
+https://github.com/ambersr/your-tribe-for-life-profile-card/blob/574310dbd98d39eac1b1cb1be203fc81c2ab5d6e/src/routes/%2Blayout.svelte#L55-L67
+
 ### Herbruikbare component
 - De knoppen op de pagina zijn herbruikbare componenten. Deze wordt in de `$lib` als component `DarkButton.svelte` aangemaakt. In het component wordt de tekst ingeladen via `<slot />`
 
+https://github.com/ambersr/your-tribe-for-life-profile-card/blob/574310dbd98d39eac1b1cb1be203fc81c2ab5d6e/src/lib/components/DarkButton.svelte#L1-L24
+
 ### Hover animation card
-- Als je over de card hovered scaled de visite card met je muis mee. Hierdoor krijgt de 'minimalistische' visitekaartje meer speelsheid
+- Als je over de card hovered scaled de visite card met je muis mee. Hierdoor krijgt de 'minimalistische' visitekaartje meer speelsheid.
+
+https://github.com/user-attachments/assets/28f07a10-0e3f-4c26-ab52-a2dad7a28bac
+
 
 ## Kenmerken
 In dit project gebruik ik SvelteKit om een dynamische visitekaartje te bouwen met herbruikbare componenten en routes. Data wordt opgehaald via de Directus API. 
