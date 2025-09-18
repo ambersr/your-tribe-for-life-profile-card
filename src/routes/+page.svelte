@@ -54,31 +54,8 @@
             
         </section>
     </div>
-    
-</main>
 
 <style>
-    main {
-        background-color: var(--primary-background);
-        padding: 2em;
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 2em;
-        margin: 1em 0 2em 0;
-
-        @media screen and (min-width: 900px) {
-            flex-direction: row;
-             width: 50em;
-             margin: auto;
-             gap: 4em;
-
-             p {
-                width: 80%;
-             }
-        }
-    }
-
     .left {
         display: flex;
         flex-direction: column;
