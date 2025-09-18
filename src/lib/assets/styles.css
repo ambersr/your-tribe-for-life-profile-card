@@ -30,7 +30,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 1em;
-    overflow: hidden;
     cursor: pointer;
     
      @media screen and (min-width: 900px) {
