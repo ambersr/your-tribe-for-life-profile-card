@@ -1,4 +1,6 @@
 <script>
+    // import { onMount } from 'svelte';
+    // import gsap from 'gsap';
     import DarkButton from '$lib/components/DarkButton.svelte';
     import github from '$lib/assets/github.svg';
     import instagram from '$lib/assets/instagram.svg';
