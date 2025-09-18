@@ -1,6 +1,6 @@
 <script>
-    // import { onMount } from 'svelte';
-    // import gsap from 'gsap';
+    import { onMount } from 'svelte';
+    import gsap from 'gsap';
     import DarkButton from '$lib/components/DarkButton.svelte';
     import github from '$lib/assets/github.svg';
     import instagram from '$lib/assets/instagram.svg';
@@ -12,6 +12,22 @@
     let { data } = $props();
     const person = data.person;
 
+    let draggableElement = 'main'
+
+    onMount(() => {
+        window.addEventListener('mousemove', (animation) => {
+            const x = (animation.clientX / window.innerWidth - 0.5) * 100; 
+            const y = (animation.clientY / window.innerHeight - 0.5) * 100;
+
+            gsap.to(draggableElement, {
+                rotationY: x,
+                rotationX: -y,
+                transformOrigin: 'center center',
+                ease: 'power2.out',
+                duration: 0.5,
+            });
+        });
+    });
 </script>
 
     <div class="left">
