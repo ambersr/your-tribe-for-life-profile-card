@@ -15,18 +15,20 @@
     let draggableElement = 'main'
 
     onMount(() => {
-        window.addEventListener('mousemove', (animation) => {
-            const x = (animation.clientX / window.innerWidth - 0.5) * 100; 
-            const y = (animation.clientY / window.innerHeight - 0.5) * 100;
+        if (window.innerWidth > 900) {
+            window.addEventListener('mousemove', (e) => {
+                const x = (e.clientX / window.innerWidth - 0.5) * 100;
+                const y = (e.clientY / window.innerHeight - 0.5) * 100;
 
-            gsap.to(draggableElement, {
-                rotationY: x,
-                rotationX: -y,
-                transformOrigin: 'center center',
-                ease: 'power2.out',
-                duration: 0.5,
+                gsap.to(draggableElement, {
+                    rotationY: x,
+                    rotationX: -y,
+                    transformOrigin: 'center center',
+                    ease: 'power2.out',
+                    duration: 0.5,
+                });
             });
-        });
+        }
     });
 </script>
 
