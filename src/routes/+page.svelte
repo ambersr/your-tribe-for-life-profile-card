@@ -108,8 +108,10 @@
         height: auto;
         object-fit: cover;
         object-position: 0% 10%;
+    }
 
-         @media screen and (min-width: 900px) {
+    @media screen and (min-width: 900px) {
+        .left img {
             width: 20em;
         }
     }

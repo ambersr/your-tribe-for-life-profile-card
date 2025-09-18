@@ -35,9 +35,11 @@
         flex-direction: column-reverse;
         gap: 2em;
         margin: 1em 0 2em 0;
+    }
 
-        @media screen and (min-width: 900px) {
-            flex-direction: row;
+	@media screen and (min-width: 900px) {
+		main {
+			 flex-direction: row;
              width: 50em;
              margin: auto;
              gap: 4em;
@@ -45,7 +47,7 @@
              p {
                 width: 80%;
              }
-        }
+		}
     }
 
 	header {
