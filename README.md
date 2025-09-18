@@ -2,6 +2,11 @@
 
 In sprint 13 heb ik gewerkt aan mijn visitekaartje. Daarbij lag de nadruk om het visitekaartje dynamisch te maken met het framework SvelteKit. Het doel is om kennis te maken met gebruik van SvelteKit en zoveel mogelijk informatie op mijn visitekaartje dynamisch te maken.
 
+### Over mij
+Ik ben Amber Schalker, 22 jaar en woonachtig in Nieuwegein. Op dit moment zit ik in het 2e jaar van de studie Frontend Design & Development aan de Hogeschool van Amsterdam. Naast mijn studie vind ik het leuk om te lezen, hard te lopen en af en toe naar concerten en festivals gaan. 
+
+Live link naar mijn visitekaartje: https://edu.nl/cud63
+
 ![mockup-profile-card](https://github.com/user-attachments/assets/c2ee9171-dad1-4c80-8792-46600aed25a8)
 
 ## Inhoudsopgave
